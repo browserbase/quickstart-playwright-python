@@ -3,7 +3,7 @@
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="logo/dark.png"/>
-        <img alt="Defer logo" src="logo/light.png"/>
+        <img alt="Browserbase logo" src="logo/light.png"/>
     </picture>
 </p>
 
