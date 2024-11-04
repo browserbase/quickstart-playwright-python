@@ -30,7 +30,7 @@ and LLM data retrievals.
 ### 1. Install dependencies
 
 ```bash
-pip install browserbase playwright python-dotenv
+pip install -r requirements.txt
 ```
 
 Alternatively, we suggest using [Poetry](https://python-poetry.org/) to manage your dependencies.
