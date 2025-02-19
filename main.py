@@ -5,8 +5,8 @@ from browserbase import Browserbase
 
 load_dotenv()
 
-BROWSERBASE_API_KEY = os.environ["BROWSERBASE_API_KEY"]
-BROWSERBASE_PROJECT_ID = os.environ["BROWSERBASE_PROJECT_ID"]
+BROWSERBASE_API_KEY = os.environ[bb_live_Qw8BrpunXIku36_v9Gno_fKpWtA]
+BROWSERBASE_PROJECT_ID = os.environ[bebf0f9f-e391-45db-9c6c-7b8855a171c2]
 
 bb = Browserbase(api_key=BROWSERBASE_API_KEY)
 
