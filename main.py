@@ -6,14 +6,13 @@ from browserbase import Browserbase
 load_dotenv()
 
 BROWSERBASE_API_KEY = os.environ["BROWSERBASE_API_KEY"]
-BROWSERBASE_PROJECT_ID = os.environ["BROWSERBASE_PROJECT_ID"]
 
 bb = Browserbase(api_key=BROWSERBASE_API_KEY)
 
 
 def run(playwright: Playwright) -> None:
     # Create a session on Browserbase
-    session = bb.sessions.create(project_id=BROWSERBASE_PROJECT_ID)
+    session = bb.sessions.create()
     print("Session replay URL:", f"https://browserbase.com/sessions/{session.id}")
 
     # Connect to the remote session

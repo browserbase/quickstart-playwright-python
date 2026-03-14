@@ -1,6 +1,6 @@
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="logo/dark.svg"/>
+        <source media="(prefers-color-scheme: dark)" srcset="logo/light.svg"/>
         <img alt="Browserbase logo" src="logo/light.svg" width="300" />
     </picture>
 </p>
@@ -30,13 +30,8 @@ and LLM data retrievals.
 ### 1. Install dependencies
 
 ```bash
-pip install -r requirements.txt
-```
-
-Alternatively, we suggest using [Poetry](https://python-poetry.org/) to manage your dependencies.
-
-```bash
-poetry install
+uv sync
+uv run playwright install chromium
 ```
 
 ### 2. Create `.env` file:
@@ -48,12 +43,12 @@ cp .env.example .env
 ### 3. Get your Browserbase API Key:
 
 - [Create an account](https://www.browserbase.com/sign-up) or [log in to Browserbase](https://www.browserbase.com/sign-in)
-- Copy your API Key and Project ID [from your Settings page](https://www.browserbase.com/settings) into the `.env` file
+- Copy your API Key [from your Settings page](https://www.browserbase.com/settings) into the `.env` file
 
 ### 4. Run the script:
 
 ```bash
-python main.py # or poetry run python main.py
+uv run python main.py
 ```
 
 ## Further reading
